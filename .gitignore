@@ -1,0 +1,7 @@
+data/
+*.zip
+.idea/
+images/
+annotations/
+raw_data/
+.DS_Store

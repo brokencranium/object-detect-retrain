@@ -24,9 +24,20 @@ import argparse
 
 # TO-DO replace this with label map
 def class_text_to_int(row_label):
-    if row_label == 'raccoon':
-        return 1
+    if row_label == 'bagel':
+        return 91
+    if row_label == 'scone':
+        return 92
+    if row_label == 'bread':
+        return 93
+    if row_label == 'roll':
+        return 94
+    if row_label == 'cookie':
+        return 95
+    if row_label == 'croissant':
+        return 96
     else:
+        print(row_label)
         None
 
 
@@ -78,10 +89,9 @@ def create_tf_example(group, path):
 
 
 def main(_):
-
-     # Taking command line arguments from users
+    # Taking command line arguments from users
     parser = argparse.ArgumentParser()
-    parser.add_argument('-in', '--input_csv', help='define the input xml file', type=str, required=True)
+    parser.add_argument('-in', '--input_csv', help='define the input annotations file', type=str, required=True)
     parser.add_argument('-out', '--output_tfrecord', help='define the output file ', type=str, required=True)
     args = parser.parse_args()
     writer = tf.python_io.TFRecordWriter(args.output_tfrecord)
