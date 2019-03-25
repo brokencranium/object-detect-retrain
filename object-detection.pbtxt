@@ -1,0 +1,30 @@
+item {
+  name: "bagel"
+  id: 1
+  display_name: "bagel"
+}
+item {
+  name: "scone"
+  id: 2
+  display_name: "scone"
+}
+item {
+  name: "bread"
+  id: 3
+  display_name: "bread"
+}
+item {
+  name: "roll"
+  id: 4
+  display_name: "roll"
+}
+item {
+  name: "cookie"
+  id: 5
+  display_name: "cookie"
+}
+item {
+  name: "croissant"
+  id: 6
+  display_name: "croissant"
+}
